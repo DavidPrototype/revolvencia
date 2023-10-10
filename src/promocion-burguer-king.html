@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="robots" content="noindex" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hora Azules | Promociones</title>
+          <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+         <!-- Google Tag Manager (noscript) -->
+         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+         <!-- End Google Tag Manager (noscript) -->
+        <custom-header></custom-header>
+        <main class="main-promo">
+            <section>
+                <div class="custom-container">
+                    <div class="row justify-content-center">
+                        <div class="link-back">
+                            <a href="index.html#promociones">
+                                <img src="icons/icon-arrow-back.svg" alt="" />
+                                Regresar</a
+                            >
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-11 offset-xl-1">
+                            <div class="main-promo--info">
+                                <h1><strong>Burger King</strong></h1>
+                                <p>
+                                    Muestra este código de barras en cualquier
+                                    Burger King y paga $74 pesos por un 
+                                    Whopper® Jr + 4 Nuggets + Refresco + Cono.
+                                </p>
+                            </div>
+                            <picture class="img-codigo">
+                                <source
+                                    srcset="img/cupon-3.webp"
+                                    type="image/webp"
+                                />
+                                <img
+                                    src="img/cupon-3.png"
+                                    alt=""
+                                    class="w-100"
+                                />
+                            </picture>
+                            <picture class="img-promo">
+                                <source
+                                    media="(min-width:1280px )"
+                                    srcset="img/promocion-3-desktop.webp"
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width:1280px )"
+                                    srcset="img/promocion-3-desktop.jpg"
+                                />
+                                <source
+                                    srcset="img/promocion-3.webp"
+                                    type="image/webp"
+                                />
+                                <img
+                                    class="w-100"
+                                    src="img/promocion-3.png"
+                                    alt=""
+                                />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-promo--legales">
+                    <div class="custom-container">
+                        <h5><strong>Términos y Condiciones</strong></h5>
+                        <p>
+                            BK Servicios de comida rápida S. de R.L. de C.V con
+                            domicilio Paseo de las Palmas no. 755 Int. 1104,
+                            Colonia Lomas de Chapultepec I Sección, C.P 11000,
+                            Ciudad de México, ofrece: 1 Whopper® Jr sin queso +
+                            4 Nuggets de Pollo + 1 Refresco regular (chico) + 1
+                            Cono sencillo (sabor a escoger: chocolate, vainilla
+                            o combinado) por $74 m.n. Válido del 1 de Agosto
+                            2023 al 06 de Noviembre de 2023. El cupón podrá ser
+                            canjeado en la medida de la disponibilidad de los
+                            productos de las sucursales participantes. El ahorro
+                            puede variar por zona geográfica. No aplica con
+                            otras promociones y/o descuentos. El precio está
+                            expresado en Moneda Nacional (pesos mexicanos). Come
+                            bien.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <custom-footer></custom-footer>
+        <script type="module" src="./js/main.js"></script>
+        <script src="js/medicion.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                metrica2("Burger King");
+
+                 //Boton regresar metrica 3-A
+                 const linkRegresar = document.querySelector('.link-back a');
+                 linkRegresar.addEventListener('click',()=>{
+                    metrica3A();
+                });
+
+
+
+            });
+        </script>
+    </body>
+</html>

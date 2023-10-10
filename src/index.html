@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="robots" content="noindex" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+       
+        <title>Horas Azules</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
+    <!-- End Google Tag Manager -->
+    </head>
+    <body>
+         <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <custom-header nav-active="nav-inicio"></custom-header>
+
+        <main>
+            <section class="section-hero">
+                <div class="custom-container">
+                    <div class="row">
+                        <custom-hero 
+                            tipo="primario"
+                            titulo="Horas Azules <br /> BanCoppel" 
+                            subtitulo="Disfruta de promociones<br />exclusivas para ti"
+                            texto-boton="hide"
+                            imagen="img/hero-image-image-1.jpg"
+                            imagen-webp="img/hero-image-image-1.webp"
+                            imagen-tarjeta="img/tdc.png"
+                            imagen-tarjeta-webp="img/tdc.webp"
+                            icon="icons/monetizacion.svg" texto-badge="10% de bonificación">
+                        </custom-hero>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-10 section-hero--bonificacion">
+                            <div class="badge--image">
+                                <img
+                                    src="icons/monetizacion.svg"
+                                    alt="Icono Monetizacion"
+                                />
+                            </div>
+                            <img
+                                class="badge--image2"
+                                src="img/icon-surprise.svg"
+                                alt="Icono Monetizacion"
+                            />
+                            <p class="badge--info">
+                                Recibe
+                                <span
+                                    class="strong-circular section-hero--bonificacion--color"
+                                    >10% de bonificación<sup>1</sup></span
+                                >
+                                al estrenar tu
+                                <span class="strong-circular"
+                                    >Tarjeta de Crédito BanCoppel</span
+                                >
+                                con compras y retiros de efectivo<sup>2</sup> que acumules
+                                durante los primeros 7 días después de su
+                                activación
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="promociones" id="promociones">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-xl-5">
+                            <h2 class="title-underline promociones--info">
+                                Estrena tu tarjeta con nuestras promociones
+                            </h2>
+                        </div>
+                            <div class="swiper promociones-grid col-xl-10">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <custom-card
+                                            link="promocion-andrea.html"
+                                            icon="icons/icon-bussines.svg"
+                                            texto-badge="-10%"
+                                            titulo="Andrea"
+                                            descripcion="Aprovecha que tienes un descuento exclusivo. ¡Estrena y consiéntete!"
+                                            imagen="img/home/Imagen.jpeg"
+                                            imagenWebp="img/home/Imagen.webp"
+                                            
+                                        >
+                                        </custom-card>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <custom-card
+                                            icon="icons/icon-bussines.svg"
+                                            texto-badge="-10%"
+                                            titulo="Farmacias VITAU"
+                                            descripcion="Cuida tu salud al comprar con tu tarjeta."
+                                            imagen="img/home/Imagen-2.jpeg"
+                                            imagenWebp="img/home/Imagen-2.webp"
+                                            link="promocion-vitau.html"
+                                        ></custom-card>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <custom-card
+                                            icon="icons/icon-money.svg"
+                                            texto-badge="Cupón"
+                                            titulo="Burger King"
+                                            descripcion="Tu tarjeta también te da cupones, ¡Quítate el antojo y disfruta!"
+                                            imagen="img/home/Imagen-1.jpeg"
+                                            imagenWebp="img/home/Imagen-1.webp"
+                                            link="promocion-burguer-king.html"
+                                        ></custom-card>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <custom-card
+                                            icon="icons/icon-bussines.svg"
+                                            texto-badge="-25%"
+                                            titulo="Benedetti´s"
+                                            descripcion="Pizza y descuentos, el plan perfecto con tu tarjeta. "
+                                            imagen="img/pizza-card.png"
+                                            imagenWebp="img/pizza-card.webp"
+                                            link="promocion-benedettis.html"
+                                        ></custom-card>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="efectivo">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 col-xl-12 efectivo--image">
+                            <picture> 
+                                <source
+                                    srcset="img/efectivo.webp"
+                                    type="image/webp"
+                                 > 
+                                <img                                   
+                                    src="img/efectivo.png"
+                                    alt="Imagen Retiro de Efectivo"
+                                />
+                            </picture>
+                        </div>
+                        <div class="col-12 col-lg-10 col-xl-6 efectivo--info">
+                            <h2 class="title-underline">
+                                ¿Quieres retirar efectivo?
+                            </h2>
+                            <p>
+                                Hazlo
+                                <span class="strong-circular dia"
+                                    >cualquier día de la semana</span
+                                >
+                                con una comisión del
+                                <strong class="strong-circular info--comision"
+                                    >8% + IVA</strong
+                                >
+                                sobre el monto que retires<sup>2</sup> en Cajeros
+                                Automáticos o tu Sucursal BanCoppel.
+                            </p>
+                            
+                            <a href="https://www.bancoppel.com/geolocalizacion/index.html" target="_blank" rel="noopener noreferrer">
+                            <custom-boton tipo="secundario" texto="Ubica la más cercana"></custom-boton></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <custom-alert
+                                icono="icons/idea.svg"
+                                titulo-alert="¿Cómo saber si puedes retirar efectivo?"
+                                texto-alert="<p>Al aprobarse tu tarjeta, pregunta a nuestros
+                                Promotores si tu Tarjeta de Crédito BanCoppel
+                                cuenta con este servicio.</p>"
+                            ></custom-alert>
+                    </div>
+                </div>
+            </section>
+            <app-bancoppel></app-bancoppel>
+            <section class="terminos">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="app-terminos">
+                                *Para usar la Banca electrónica, acude a firmar el Contrato de Servicios Digitales en cualquier Sucursal.
+                            </p>
+                            <p class="strong-circular condiciones" >
+                                Términos y Condiciones Generales
+                                <span class="campania"
+                                    >"Campaña Horas Azules 2023"</span
+                                >
+                            </p>
+                            <p>
+                                Vigencia de la campaña del 01 de mayo de 2023 al
+                                31 de diciembre de 2023. | Consulta términos y
+                                condiciones en
+                                <a  href="https://promocionesbancoppel.com/" target="_blank">
+                                <span class="strong-helvetica"
+                                    >promocionesbancoppel.com</span
+                                >
+                                </a>
+                                o a través de la siguiente liga:
+                                <a href="http://ivt.mx/tycclas" target="_blank">
+                                <span class="strong-helvetica"
+                                    >http://ivt.mx/tycclas</span
+                                >
+                                </a>
+                                  <sup>1</sup>El porcentaje de bonificación se tomará del monto que se acumule 
+                                durante los primeros 7 días después de la activación de la tarjeta.
+                                 Promoción válida sólo para clientes nuevos de Tarjeta de Crédito 
+                                 BanCoppel en donde al realizar compras o retiros de efectivo podrán 
+                                 recibir 10% de bonificación sobre el total acumulado dentro de los 
+                                 primeros 7 días posteriores a la entrega y activación de la tarjeta. 
+                                 | Aplican restricciones: Limitado a 800 bonificaciones mensuales. 
+                                 Bonificación máxima de $500 MXN. | La bonificación se realizará 
+                                 directamente en la Tarjeta de Crédito BanCoppel y se verá reflejada
+                                en el Estado de Cuenta treinta días posteriores al término de la
+                                vigencia bajo el concepto “Abono por Recompensa Inmediata”. 
+                                | <sup>2</sup>El acceso a disposición de efectivo está sujeta a aprobación crediticia.
+                            </p>
+                            <p>
+                                <span class="strong-circular"
+                                    >Comisión del 8% más IVA</span
+                                >
+                                del monto dispuesto. |
+                                <span class="strong-circular"
+                                    >CAT (COSTO ANUAL TOTAL) PROMEDIO 85.3% sin
+                                    IVA.</span
+                                >
+                                Tasa de interés ordinaria promedio ponderada
+                                anual fija:
+                                <span class="strong-circular"
+                                    >63.1% sin IVA.</span
+                                >
+                                Comisión anual
+                                <span class="strong-circular"
+                                    >$0.00 sin IVA.</span
+                                >
+                                Tasa fija. Para fines informativos y de
+                                comparación. Fecha de cálculo del CAT: 31 de
+                                julio de 2023. Fecha de vigencia de la oferta:
+                                del 1 de septiembre de 2023 al 31 de enero de
+                                2024. Vigencia del cálculo del CAT no mayor a 6
+                                meses. Consulta términos, condiciones,
+                                comisiones y requisitos de contratación en
+                                <a href="https://www.bancoppel.com/main/index.html" target="_blank"> bancoppel.com</a> 
+                                | BanCoppel S.A. Institución de
+                                Banca Múltiple, no adquiere ningún tipo de
+                                obligación en cuanto a la calidad, tarifas y
+                                cumplimientos de los bienes o servicios
+                                ofrecidos por las empresas participantes en la
+                                promoción. | BanCoppel S.A. Institución de Banca
+                                Múltiple es una persona moral distinta a Coppel
+                                S.A. de C.V., así como de cualquiera de sus
+                                negocios asociados o vinculados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+       
+        <custom-footer></custom-footer>
+
+        <modal-salida id-modal="modal-salida-ubicacion" link-btn-salida="https://www.bancoppel.com/geolocalizacion/index.html"></modal-salida>
+      
+        <script type="module" src="./js/main.js"></script>
+        <script type="module" src="./js/home.js"></script>
+        <script type="module" src="./js/layout/promociones.js"></script>
+        <script  src="js/medicion.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                metrica1();
+
+                metrica1A('Inicio');
+                metrica10A('Inicio');
+                //Metrica 1-B
+                const cardPromos = document.querySelectorAll('.card-promo');
+                cardPromos.forEach(card => {
+                    card.addEventListener('click',()=>{
+                        let tituloCard = card.children[1].children[0].innerText;           
+                        metrica1B(tituloCard);
+                    })
+                });
+
+                //Metrica 1-C
+
+                const botonSucursal = document.querySelector('custom-boton .secundario');
+                botonSucursal.addEventListener('click',()=>{
+                    metrica1C();
+                })
+
+                //Metrica modal
+
+                const modal = document.querySelector('modal-salida .modal')
+                
+                if ( modal.classList.contains('show')){
+                    metrica2A('Home - boton ubicacion')
+                }
+
+                const modalbutton = document.querySelector('modal-salida .modal custom-boton')
+                modalbutton.addEventListener('click',function(){
+                    metrica2C('Home - ubicacion');
+                });
+            });
+        </script>
+        
+    </body>
+</html>

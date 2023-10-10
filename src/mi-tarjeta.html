@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="robots" content="noindex" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+        <title>Horas Azules | Mi tarjeta</title>
+
+         <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P7456C6L');</script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+          <!-- Google Tag Manager (noscript) -->
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7456C6L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          <!-- End Google Tag Manager (noscript) -->
+        <custom-header nav-active="nav-tarjeta"></custom-header>
+        <main class="main-tarjeta">
+            <section class="section-hero">
+                <div class="custom-container">
+                    <div class="row">
+                        <custom-hero
+                            tipo="secundario"
+                            titulo="Horas Azules BanCoppel"
+                            subtitulo="Lleva el control de tus pagos y sin retrasos"
+                            texto-boton="hide"
+                            imagen="img/hero-secundario.png"
+                            imagen-webp="img/hero-secundario.png"
+                        >
+                        </custom-hero>
+                    </div>
+                </div>
+            </section>
+            <section class="fechas">
+                <div class="custom-container">
+                    <div class="row">
+                        <h2 class="title-underline">
+                            Conoce las fechas importantes de tu tarjeta
+                        </h2>
+                        <h4>
+                            Evita los intereses de más y mantén un buen
+                            historial
+                        </h4>
+                    </div>
+                    <div class="row fechas-carrusel-row">
+                        <div class="accordion fechas-carrusel">
+                            <div
+                                class="carrusel-item"
+                                id="card-fecha-1"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#accordionExample"
+                                aria-expanded="false"
+                                aria-controls="accordionExample"
+                            >
+                                <custom-card-icon
+                                    icon="icons/business-objetos-scissors-281.svg"
+                                    titulo="Fecha de corte"
+                                ></custom-card-icon>
+                            </div>
+                            <div
+                                class="carrusel-item"
+                                id="card-fecha-2"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#accordionExample"
+                                aria-expanded="false"
+                                aria-controls="accordionExample"
+                            >
+                                <custom-card-icon
+                                    icon="icons/business-finanzas-currency-dollar-circle-48.svg"
+                                    titulo="Periodo de pago"
+                                ></custom-card-icon>
+                            </div>
+                            <div
+                                class="carrusel-item"
+                                id="card-fecha-3"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#accordionExample"
+                                aria-expanded="false"
+                                aria-controls="accordionExample"
+                            >
+                                <custom-card-icon
+                                    icon="icons/business-objetos-calendar-314.svg"
+                                    titulo="Fecha límite de pago"
+                                ></custom-card-icon>
+                            </div>
+                        </div>
+                        <div
+                            class="col-12 col-xl-8 collapse"
+                            id="accordionExample"
+                        >
+                            <div class="swiper" id="swiper-fechas">
+                                <div class="swiper-wrapper">
+                                    <div
+                                        class="swiper-slide"
+                                        data-slide="card-fecha-1"
+                                    >
+                                        <div class="accordion-body">
+                                            <picture>
+                                                <img
+                                                    src="icons/Illustration-1.svg"
+                                                    alt=""
+                                                    srcset=""
+                                                />
+                                            </picture>
+                                            <div class="accordion-body__info">
+                                                <h4>
+                                                    <strong
+                                                        >El 20 de cada
+                                                        mes</strong
+                                                    >
+                                                </h4>
+                                                <p>
+                                                    Es el día en el que se
+                                                    cierra el registro de todas
+                                                    las compras que realizaste
+                                                    durante un periodo de 30
+                                                    días. A partir de este día
+                                                    de corte, inicia otro
+                                                    periodo de registro.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="swiper-slide"
+                                        data-slide="card-fecha-2"
+                                    >
+                                        <div class="accordion-body">
+                                            <picture>
+                                                <img
+                                                    src="icons/Illustration-2.svg"
+                                                    alt=""
+                                                    srcset=""
+                                                />
+                                            </picture>
+                                            <div class="accordion-body__info">
+                                                <h4>
+                                                    <strong
+                                                        >Del 21 del mes actual
+                                                        al 16 del siguiente
+                                                        mes</strong
+                                                    >
+                                                </h4>
+                                                <p>
+                                                    Es un periodo de 20 días
+                                                    después de tu Fecha de
+                                                    Corte, en el que puedes
+                                                    pagar tu tarjeta sin generar
+                                                    intereses o comisiones
+                                                    extra.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="swiper-slide"
+                                        data-slide="card-fecha-3"
+                                    >
+                                        <div class="accordion-body">
+                                            <picture>
+                                                <img
+                                                    src="icons/Illustration-3.svg"
+                                                    alt=""
+                                                    srcset=""
+                                                />
+                                            </picture>
+                                            <div class="accordion-body__info">
+                                                <h4>
+                                                    <strong
+                                                        >El 16 de cada
+                                                        mes</strong
+                                                    >
+                                                </h4>
+                                                <P>
+
+                                                    Es el último día para 
+                                                    realizar el pago de tu 
+                                                    tarjeta. Si pagas después de este día, 
+                                                    se pueden generar intereses o 
+                                                    comisiones por falta de pago. 
+                                                </P>
+                                                <!-- <p>
+                                                    Es el último día para
+                                                    realizar el pago de tu
+                                                    tarjeta a tiempo. Si pagas
+                                                    después generas intereses o
+                                                    comisiones. 
+                                                </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-8">
+                            <custom-alert
+                                icono="icons/idea.svg"
+                                titulo-alert="¡Mantén seguro tu NIP!"
+                                texto-alert="<ul><li>No lo compartas</li><li>Guarda bien tu tarjeta para evitar robos o extravíos</li><li>Cámbialo frecuentemente en los Cajeros Automáticos BanCoppel</li></ul>"
+                            ></custom-alert>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <app-bancoppel></app-bancoppel>
+            <section class="terminos-app">
+                <div class="custom-container">
+                    <div class="row">
+                        <div class="col terminos-app--info">
+                            <p>
+                                *Para usar la Banca electrónica, acude a firmar el Contrato de Servicios Digitales en cualquier Sucursal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <custom-footer></custom-footer>
+        <script type="module" src="./js/main.js"></script>
+        <script type="module" src="./js/mi-tarjeta.js"></script>
+        <script src="js/medicion.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                metrica4();
+                metrica1A('Mi tarjeta');
+                metrica10A('Mi tarjeta');
+                const cardFechas = document.querySelectorAll('custom-card-icon');
+
+                cardFechas.forEach(cardFecha => {
+
+                    cardFecha.addEventListener('click',()=>{
+                        metrica4A(cardFecha.getAttribute('titulo'))
+                    })
+                    
+                });
+
+
+
+            });
+        </script>
+    </body>
+</html>

@@ -87,11 +87,19 @@
                                 <form class="calculadora--formulario">
                                     <div class="captura-saldo">
                                         <label for="saldo-pendiente">Saldo mensual pendiente</label>
-                                        <input type="number"  id="saldo-pendiente" placeholder="$0.00">                                       
+                                        <input type="number"  id="saldo-pendiente" placeholder="$0.00" >                                       
+                                        <div class="error error-saldo d-none">
+                                            <img src="img/cerrar_circulo.svg" alt="icono Cerrar">
+                                            <p class="mensaje"> </p>
+                                        </div>
                                     </div>
                                     <div class="captura-saldo">
                                         <label for="pago" >¿Cuánto podrías pagar este mes?</label>
-                                        <input type="number"  id="pago" placeholder="$0.00">                                       
+                                        <input type="number"  id="pago" placeholder="$0.00" > 
+                                        <div class="error error-pago d-none">
+                                            <img src="img/cerrar_circulo.svg" alt="icono Cerrar">
+                                            <p  class="mensaje"> </p>
+                                        </div>                                      
                                     </div>
                                     <div class="advertencia">
                                        
@@ -99,7 +107,7 @@
                                        
                                         <p>El simulador es únicamente para la Tarjeta de Crédito BanCoppel Clásica</p>
                                     </div>
-                                    <custom-boton tipo="primario" texto="Calcular" desabilitado="true"></custom-boton>
+                                    <custom-boton id="btn-submit" tipo="primario" texto="Calcular" desabilitado="true"></custom-boton>
                                 </form>
                             </div>
                         </div> 
@@ -114,10 +122,10 @@
                                 </div>
                                 <div class="detalles">
 
-                                        <div class="informacion">
-                                            <p class="informacion-fecha">El 16 del próximo mes tu pago será de </p>
-                                            <p class="informacion-cantidad">$1,061.01</p>
-                                            <p class="informacion-aviso">Esta cantidad cambiará si se registran más compras antes de tu Fecha de Corte.</p>
+                                        <div class="info">
+                                            <p class="info-fecha">El 16 del próximo mes tu pago será de </p>
+                                            <p class="info-cantidad">$1,061.01</p>
+                                            <p class="info-aviso">Esta cantidad cambiará si se registran más compras antes de tu Fecha de Corte.</p>
                                         </div>
                                         <div class="detalle">
                                             <p class="detalle-subtitulo">Detalle del pago</p> 
@@ -132,6 +140,7 @@
                                         </div>
                                         <div class="acciones ">
                                             <custom-boton
+                                            id="btn-nuevo-calculo"
                                             tipo="secundario-icon-left"
                                             texto="Calcular de nuevo"
                                             ></custom-boton>
@@ -141,7 +150,9 @@
                                 
                             </div>
                         </div>                        
-                    </div>                    
+                    </div> 
+                    
+                   
                     <div class="row">
                         <div class="col-12 col-lg-9 col-xl-10">
                             <div class="calculadora--fecha">

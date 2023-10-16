@@ -11,26 +11,26 @@ export default {
         rollupOptions: {
             input: {
                 index: path.resolve(__dirname, "src/index.html"),
-                miTarjeta: path.resolve(__dirname, "src/mi-tarjeta.html"),
-                miApp: path.resolve(__dirname, "src/mi-app.html"),
+                // miTarjeta: path.resolve(__dirname, "src/mi-tarjeta.html"),
+                // miApp: path.resolve(__dirname, "src/mi-app.html"),
 
-                preguntasFrecuentes: path.resolve(
-                    __dirname,
-                    "src/preguntas-frecuentes.html"
-                ),
-                promoAndrea: path.resolve(
-                    __dirname,
-                    "src/promocion-andrea.html"
-                ),
-                promoBenedettis: path.resolve(
-                    __dirname,
-                    "src/promocion-benedettis.html"
-                ),
-                promoBurguerKing: path.resolve(
-                    __dirname,
-                    "src/promocion-burguer-king.html"
-                ),
-                promoVitau: path.resolve(__dirname, "src/promocion-vitau.html"),
+                // preguntasFrecuentes: path.resolve(
+                //     __dirname,
+                //     "src/preguntas-frecuentes.html"
+                // ),
+                // promoAndrea: path.resolve(
+                //     __dirname,
+                //     "src/promocion-andrea.html"
+                // ),
+                // promoBenedettis: path.resolve(
+                //     __dirname,
+                //     "src/promocion-benedettis.html"
+                // ),
+                // promoBurguerKing: path.resolve(
+                //     __dirname,
+                //     "src/promocion-burguer-king.html"
+                // ),
+                // promoVitau: path.resolve(__dirname, "src/promocion-vitau.html"),
             },
             output: {
                 chunkFileNames: "js/[name]-[hash].js",

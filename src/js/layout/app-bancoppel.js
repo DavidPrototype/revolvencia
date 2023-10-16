@@ -53,14 +53,14 @@ export default class AppBanCoppel extends HTMLElement {
                         </div>
                         <div class="col-12 col-lg-10 col-xl-6 app--info">
                             <h2 class="title-underline">
-                                Lleva el banco a todas partes con la App
-                                BanCoppel*
+                            La App BanCoppel* te acompaña estés donde estés
                             </h2>
                             <p>
-                            Haz compras seguras, transfiere, recarga tiempo aire, activa y desactiva tarjetas desde tu celular.
+                            Puedes realizar el pago de tu Tarjeta de Crédito BanCoppel <span class="strong-circular ">donde sea y sin hacer filas<span>. 
                             </p>
-                            <a href="https://bancoppe.onelink.me/UapG/c2757ivk" target="_blank"><custom-boton tipo="primario" texto="Descargar"></custom-boton></a>
+                            <a href="https://bancoppe.onelink.me/UapG/obsjwcmv" target="_blank"><custom-boton tipo="primario" texto="Descargar"></custom-boton></a>
                         </div>
+                    </div>
                     </div>
 
                     

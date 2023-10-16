@@ -16,7 +16,7 @@
 
     .title-underline {
         align-content: center;
-    }
+    }  
 
     .promociones{
         .row > div:first-child{
@@ -80,6 +80,58 @@
             & p:last-of-type {
                 grid-row: 2/3;
             }
+        }
+    }
+
+    .calculadora{
+        &--formulario{
+           text-align: center;
+
+           .captura-saldo,.advertencia{
+            text-align: left;
+           }
+        }
+        &--resultados{
+            .detalles{
+                .acciones{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .informacion{
+       
+        &--info {               
+            
+            h2 {
+                color: var(--color-azul-2);
+                font-size: 2rem;
+                line-height: 2.5rem;
+                text-align: center;
+            }
+            .title-underline {
+                place-items: center;
+            }
+    
+            p{               
+                margin: 1.5rem 0 3rem 0;                
+               
+            }
+        }
+    
+        &--infocards{
+          
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            .card{
+                height: 100%;
+
+                .contenido{
+                    flex: auto;
+                }
+            }
+           
         }
     }
 }

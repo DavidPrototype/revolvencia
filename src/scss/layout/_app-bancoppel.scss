@@ -1,7 +1,9 @@
 .app {
     padding: 1.5rem 0 4rem 0;
     text-align: center;
-    background: var(--color-blanco-1);
+    // background: var(--color-blanco-1);
+    background: var(--color-azul-3);
+    border-radius: 2.5rem;
 
     &--instrucciones {
         display: none;
@@ -151,6 +153,7 @@
 @include media-breakpoint-up(xl) {
     .app {
         padding: 0;
+        border-radius: 4rem;
 
         .row {
             display: grid;

@@ -42,29 +42,60 @@ window.customElements.define("custom-card", Card);
 export class CardIcon extends HTMLElement {
     constructor() {
         super();
-        /* this.attachShadow({ mode: "open" }); */
     }
 
     connectedCallback() {
-        let icono = this.getAttribute("icon");
-        let titulo = this.getAttribute("titulo");
-
-        this.innerHTML = `
-        
-        <div
-            class="card card-icon"
-        >
-            <picture>
-                <img
-                    src="${icono}"
-                    alt=""
-                />
-            </picture>
-            <h5><strong>${titulo}</strong></h5>
-        </div>
-    `;
+        let alineacion = this.getAttribute("alineacion");
+        let flujo = this.getAttribute("flujo");
+        let icono = this.getAttribute("icono");
+        let titulo = this.getAttribute("titulo-card");
+        let contenido = this.getAttribute("contenido-card");
+        let linkCard = this.getAttribute("link-card");
+        let textoLinkCard = this.getAttribute("texto-link");
+        let target = this.getAttribute("target-link");
+        this.innerHTML = `        
+                <div
+                    class="card card-icon ${alineacion} ${flujo}"
+                >
+                    <picture>
+                        <img
+                            src="${icono}"
+                            alt=""
+                        />
+                    </picture>
+                    
+                    ${
+                        flujo == "fila"
+                            ? '<div class="contenido"><h5>' + titulo + "</h5>"
+                            : '<div class="contenido"><h5><strong>' +
+                              titulo +
+                              "</strong></h5>"
+                    }
+                   
+                    ${contenido == null ? "" : contenido} 
+                    
+                    ${
+                        textoLinkCard == null
+                            ? ""
+                            : target != null
+                            ? '<a href="' +
+                              linkCard +
+                              '" target="' +
+                              target +
+                              '">' +
+                              textoLinkCard +
+                              "</a></div>"
+                            : '<a href="' +
+                              linkCard +
+                              '">' +
+                              textoLinkCard +
+                              "</a></div>"
+                    } 
+                </div>
+            `;
     }
 }
 
 // Define your custom element
 window.customElements.define("custom-card-icon", CardIcon);
+

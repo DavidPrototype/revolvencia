@@ -161,5 +161,202 @@
         }
     }
 
+    .calculadora{
+        padding: 6rem 0;  
+        
     
+        &--info {               
+            
+            h2 {
+                color: var(--color-azul-2);
+                @include text-lg-48;
+                text-align: center;
+            }
+            .title-underline {
+                place-items: center;
+            }
+    
+            p{
+                color: var(--color-gris-1);
+                margin: 1rem 0 3rem 0;
+                @include text-md-20;               
+                text-align: center;
+            }
+        }
+        &--formulario{
+            text-align: left;
+        }
+
+        &--simulador{
+            // border: 1px solid yellow;
+            border-radius: 1.5rem;      
+            box-shadow: var(--shadow-blue);
+            padding: 2rem 2.5rem;
+    
+            picture{
+                display: inline-block;
+                border-radius: 50%;
+                padding: 12px;
+                background: var(--state-info-100);
+                img{
+                    width: 32px !important;
+                    height: 32px !important;
+                }
+            }
+    
+            p{
+                font-family: var( --font-primaria-bold);
+                @include text-md-20;  
+               
+            }
+
+            label{
+                font-family: var(--font-secundaria-regular);
+                color: var(--neutral-gris-400);
+                @include text-sm-16;
+            }
+           
+            
+           
+            
+        }
+
+        &--resultados{
+            border-radius: 0px 24px 24px 0;
+            display:flex;
+
+            .datos-entrada{
+                padding:32px 40px;
+                border-radius: 24px 0 0 24px;
+                @include  text-md-24;
+                flex-basis: 40%;
+            }
+            .detalles{
+                padding: 64px 40px;
+                display: grid;
+                column-gap:24px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto 1fr;
+
+                .informacion {
+                  
+                    &-fecha{
+                                  
+                        @include  text-md-20;
+                    }
+                    &-cantidad{
+                        
+                        @include text-lg-32;
+                        margin: 0.5rem 0 1.5rem 0;  
+                    }
+                    &.aviso{
+                        font-family: var(--font-secundaria-regular);
+                        @include text-sm-14; 
+                    }
+                }
+
+
+                .detalle{
+                    margin:0;
+                    grid-column:2/3;
+                    grid-row: 1/ -1;
+
+                    &-subtitulo{
+                                    
+                        @include  text-md-20;
+                        margin-bottom: 1rem;
+                    }
+                    &-descripcion{
+                        font-family: var(--font-secundaria-regular);
+                        @include text-sm-16; 
+                    }
+                    &-cantidad{
+                        
+                        @include  text-md-20;
+                    }
+                    &-separador{
+                       
+                        margin: 16px 0;
+                    }
+                   
+                }
+
+                .acciones{
+                   align-self: end;
+                   justify-self: start;
+                }
+            }
+
+           
+
+        }
+    
+        &--fecha{
+            margin-top: 1.5rem;
+        }
+    }
+
+    .informacion{
+        padding: 6rem 0; 
+        &--info {               
+            
+            h2 {
+                color: var(--color-azul-2);
+                @include text-lg-48;
+                text-align: center;
+            }
+            .title-underline {
+                place-items: center;
+            }
+    
+            p{
+                color: var(--color-gris-1);
+                margin: 1rem 0 3rem 0;
+                @include text-md-20;               
+                text-align: center;
+            }
+        }
+    
+        &--infocards{
+
+            
+          
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 1fr 1fr;
+
+            .card{
+                height: 100%;
+            }
+
+            .calendario, .lady, .tdc{
+                display: block;
+            }
+
+            #fecha-limite-pago{
+                grid-column:3/4;
+                grid-row: 2/3;
+            }
+
+            .tdc{
+                grid-column: 4/5;
+                grid-row:2/3;
+            }
+            .calendario{
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+
+            .lady{
+                grid-column: 3/5;
+                grid-row: 1/2;
+            }
+        }
+    }
+
+    .terminos{
+        p.cantidades, p.banca {
+            font-family: var(--font-primaria-regular);
+            @include text-md-20;
+        }
+    }
 }

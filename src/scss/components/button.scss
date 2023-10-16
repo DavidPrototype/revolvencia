@@ -21,6 +21,10 @@
     &.primario {
         background: var(--color-azul-2);
         color: var(--color-blanco-1);
+
+        &:disabled{
+            background:var( --color-azul-5);
+        }
     }
 
     &.secundario {
@@ -48,6 +52,22 @@
             right: 32px;
         }
     }
+
+    &.secundario-icon-left {
+        background: var(--color-blanco-1);
+        color: var(--color-azul-2);
+        border: 1px solid var(--color-azul-2);
+        column-gap: 0.75rem;
+
+        &::before {
+            content: url(../img/arrowleft.svg);
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 32px;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -58,6 +78,10 @@
         &.secundario-icon::after {
             position: relative;
             right: auto;
+        }
+        &.secundario-icon-left::before {
+            position: relative;
+            left: auto;
         }
     }
 }

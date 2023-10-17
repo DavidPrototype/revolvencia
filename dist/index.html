@@ -17,7 +17,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
         
-      <script type="module" crossorigin src="./js/index-7a0164f0.js"></script>
+      <script type="module" crossorigin src="./js/index-2e5f51b9.js"></script>
       <link rel="stylesheet" href="./css/index-60404536.css">
     </head>
     <body>
@@ -89,7 +89,7 @@
                                 <form class="calculadora--formulario">
                                     <div class="captura-saldo">
                                         <label for="saldo-pendiente">Saldo mensual pendiente</label>
-                                        <input type="number"  id="saldo-pendiente" placeholder="$0.00" >                                       
+                                        <input type="text"  id="saldo-pendiente" placeholder="$0.00" >                                       
                                         <div class="error error-saldo d-none">
                                             <img src="img/cerrar_circulo.svg" alt="icono Cerrar">
                                             <p class="mensaje"> </p>
@@ -97,7 +97,7 @@
                                     </div>
                                     <div class="captura-saldo">
                                         <label for="pago" >¿Cuánto podrías pagar este mes?</label>
-                                        <input type="number"  id="pago" placeholder="$0.00" > 
+                                        <input type="text"  id="pago" placeholder="$0.00"  > 
                                         <div class="error error-pago d-none">
                                             <img src="img/cerrar_circulo.svg" alt="icono Cerrar">
                                             <p  class="mensaje"> </p>
@@ -119,8 +119,8 @@
                                     <picture>
                                         <img src="img/calc.svg" alt="Icono Calculadora">
                                     </picture>
-                                    <p>Si el total de tu deuda mensual es de <span class="strong-circular"> $5,000.00</span> 
-                                        y este mes pagas <span class="strong-circular">$4,000.00</span></p>
+                                    <p>Si el total de tu deuda mensual es de <span class="strong-circular" id="entrada-saldo"> $5,000.00</span> 
+                                        y este mes pagas <span class="strong-circular" id="entrada-pago">$4,000.00</span></p>
                                 </div>
                                 <div class="detalles">
 
@@ -132,13 +132,13 @@
                                         <div class="detalle">
                                             <p class="detalle-subtitulo">Detalle del pago</p> 
                                             <p class="detalle-descripcion">Saldo pendiente</p>
-                                            <p class="detalle-cantidad">$1,000.00</p>
+                                            <p class="detalle-cantidad" id="deuda">$1,000.00</p>
                                             <hr class="detalle-separador">
                                             <p class="detalle-descripcion">Intereses (5.26%)</p>                                   
-                                            <p class="detalle-cantidad">$52.60</p>
+                                            <p class="detalle-cantidad" id="interes-deuda">$52.60</p>
                                             <hr class="detalle-separador">
-                                            <p class="detalle-descripcion">IVA de los intereses (16%)</p>
-                                            <p class="detalle-cantidad">$08.41</p>
+                                            <p class="detalle-descripcion" >IVA de los intereses (16%)</p>
+                                            <p class="detalle-cantidad" id="iva-interes">$08.41</p>
                                         </div>
                                         <div class="acciones ">
                                             <custom-boton

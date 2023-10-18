@@ -81,7 +81,8 @@
                         <ul>
                             <li><a href="https://www.bancoppel.com/acerca_bancoppel/quienes_somos.html?v=2" target="_blank">¿Quiénes somos?</a></li>
                             <li><a href="https://www.bancoppel.com/acerca_bancoppel/info_corp.html?v=2" target="_blank">Informacion Corporativa</a></li>
-                            <li><a href="https://www.bancoppel.com/imagenes/1001/pdf.php?id=4836a6a5" target="_blank">Tarifas y comisiones de crédito</a></li>                            
+                           
+                            
                             
                         </ul>
                     </div>

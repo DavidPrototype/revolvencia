@@ -73,6 +73,16 @@ export default class Footer extends HTMLElement {
                                 title="Youtube"
                                 alt="Logo Youtube"
                             /></a>
+                            <a href="https://www.youtube.com/channel/UCiLO44Yr96fpdkv-ZN-duqg" target="_blank"><img
+                                src="img/icon-youtube.svg"
+                                title="Youtube"
+                                alt="Logo Youtube"
+                            /></a>
+                            <a href="https://www.youtube.com/channel/UCiLO44Yr96fpdkv-ZN-duqg" target="_blank"><img
+                                src="img/icon-youtube.svg"
+                                title="Youtube"
+                                alt="Logo Youtube"
+                            /></a>
                             
                         </div>
                     </div>
